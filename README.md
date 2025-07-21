@@ -27,7 +27,7 @@ The program simulates the following steps, using dramatic pauses to build antici
 The program is designed to be an automatic simulation. You do not need to enter any commands after running it.
 
 1.  Make sure you have Python installed on your system.
-2.  Save the code as `ShinyPokemon.py`.
+2.  Save the code as `ShinyPokémon.py`.
 3.  Open your terminal or command prompt.
 4.  Run the script with the following command:
 
