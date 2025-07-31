@@ -5,8 +5,6 @@ A Python simulator that mimics hatching a Pokémon egg, featuring a random chanc
 
 This is a simple command-line simulator written in Python that recreates the experience of receiving an egg from a Pokémon Daycare and hatching it, featuring the exciting chance of the Pokémon being a *Shiny*.
 
-This project was created as a fun exercise to practice using the `random` and `time` modules in Python, as well as conditional logic and string formatting.
-
 ## How It Works
 
 The program simulates the following steps, using dramatic pauses to build anticipation:
@@ -18,9 +16,10 @@ The program simulates the following steps, using dramatic pauses to build antici
     * If these two numbers are **exactly the same** (`TSV == PSV`), the Pokémon that hatches will be Shiny! This simulates a probability of **1 in 512**.
     * When a Shiny Pokémon hatches, the notification message is displayed in **yellow** in the terminal.
 4.  **Random Attributes:**
-    * IVs (Individual Values) for Attack, Defense, and Speed are randomly generated (from 0-15).
-    * The type of Poké Ball the Pokémon was "caught" in is also randomly selected from a large list.
-5.  **The Hatching:** After a pause, the program announces which Pokémon has hatched and reveals if it's Shiny, its IVs, and its Poké Ball.
+    * **Nature Assignment:** Each hatched Pokémon is now assigned a random Nature from a list of 25 possible natures.
+    * **Expanded IV System:** The script now generates five Individual Values (Attack, Special Attack, Defense, Special Defense, and Speed), each with a random value from 0 to 31.
+5.  **IV Judge:** After hatching, a "Judge" evaluates the Pokémon's potential by summing its IVs and giving a rating, from "Ok stats" to "Amazing Stats".
+6.  **The Hatching:** After a pause, the program announces which Pokémon has hatched and reveals all of its details: if it's Shiny, its Nature, its IVs, its Judge rating, and the Poké Ball it came in.
 
 ## How to Use
 
@@ -34,7 +33,7 @@ The program is designed to be an automatic simulation. You do not need to enter 
     ```sh
     python ShinyPokemon.py
     ```
-5.  Now, just wait and hope for a Shiny!
+5.  Now, just wait and see what you get!
 
 ## Technologies Used
 
